@@ -1,0 +1,59 @@
+<div class="container col-lg-12">
+<h2>Contract</h2>
+	<div class="row col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Full Name: </label>
+			<input type="text" name="fullname" required>
+		</div>
+		<div class="row form-inline">
+			<label>Short Name: </label>
+			<input type="text" name="shortname" required>
+		</div>
+		<div class="row form-inline">
+			<label>Contract Number: </label>
+			<input type="text" name="contractnum" required>
+		</div>
+		<div class="row form-inline">
+			<label>Has a Parent Contract?</label>
+			<input type="radio" name="yesorno" value="yes" checked> Yes
+			<input type="radio" name="yesorno" value="no"> No
+		</div>
+		<br>
+		<div class="row form-inline">
+			<label>Parent Contract: </label>
+			<select name="parentcontract" required>
+				<option value="holder1">Contract Number - Short Name</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Client: </label>
+			<select name="client" required>
+				<option value="DHM">Department of Homeland Management</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Start Date: </label>
+			<input type="date" name="startdate" required>
+			<i class="glyphicon glyphicon-calendar"></i>
+			<label style="float: none;">End Date: </label>
+			<input type="date" name="enddate" required>
+			<i class="glyphicon glyphicon-calendar"></i>
+		</div>
+		<div class="row form-inline">
+			<label>Contract Type: </label>
+			<select name="contracttype" required>
+				<option value="holder1">Contract Number - Short Name</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Calendar: </label>
+			<select name="calendar" required>
+				<option value="DHM">Department of Homeland Management</option>
+			</select>
+		</div>
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+	</div>
+</div>

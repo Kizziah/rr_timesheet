@@ -1,0 +1,102 @@
+<div class="container col-lg-12">
+	<h2>User</h2>
+	<div class="row col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Last Name: </label>
+			<input type="text" name="lastname" required>
+		</div>
+		<div class="row form-inline">
+			<label>First Name: </label>
+			<input type="text" name="firstname" required>
+		</div>
+		<div class="row form-inline">
+			<label>M.I. </label>
+			<input type="text" name="minitial" style="width: 50px;">
+		</div>
+		<div class="row form-inline">
+			<label>Email: </label>
+			<input type="text" name="email" required>
+		</div>
+		<div class="row form-inline">
+			<label>Password: </label>
+			<input type="password" name="pword" required>
+		</div>
+		<div class="row form-inline">
+			<label>Supervisor: </label>
+			<select name="superviser" required>
+				<option value="system">System</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Timesheet Approver: </label>
+			<select name="tsapprover" required>
+				<option value="system">System</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Expense Approver: </label>
+			<select name="exapprover" required>
+				<option value="system">System</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>External Viewer: </label>
+			<input type="text" name="exviewer" required>
+		</div>
+		<div class="row form-inline">
+			<label>Hire Date: </label>
+			<input type="date" name="hiredate" required>
+			<i class="glyphicon glyphicon-calendar"></i>
+		</div>
+		<div class="row form-inline">
+			<label>Employee Type: </label>
+			<select name="employeetype" required>
+				<option value="fulltime">Full Time Employee</option>
+				<option value="parttime">Part Time Employee</option>
+				<option value="intern">Intern</option>
+				<option value="consultant">Consultant</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Position: </label>
+			<input type="text" name="position" required>
+		</div>
+		<div class="row form-inline">
+			<label>Compensation: </label>
+			<input type="text" name="compensation" style="width: 100px;" required>
+			&nbsp;
+			<select name="currency" required>
+				<option value="usd">$USD</option>
+				<option value="euro">Euro</option>
+				<option value="yen">Yen</option>
+				<option value="pounds">Pounds</option>
+			</select>
+			&nbsp;
+			<select name="accruance" required>
+				<option value="annually">Annually</option>
+				<option value="hourly">Hourly</option>
+			</select>
+		</div>
+		<!-- 
+		user
+		admin
+		accountant
+		external viewer 
+		-->
+		<div class="row form-inline">
+			<label>Roles: </label>
+			<div class="checkboxes">
+				<input type="checkbox" name="check1" value="exViewCheck" disabled>External Viewer<br>
+				<input type="checkbox" name="check2" value="genUserCheck">General User<br>
+				<input type="checkbox" name="check3" value="accountantCheck">Accountant<br>
+				<input type="checkbox" name="check4" value="administratorCheck">Administrator<br>
+			</div>
+		</div>
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+	</div>
+</div>
+
+

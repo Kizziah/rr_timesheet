@@ -1,0 +1,26 @@
+
+<ul>
+	<div class="imgcontainer">
+    	<img src="./logo.png" alt="BCMC" class="logo">
+	</div>
+</ul>
+
+<div class="mainbox left-raised col-lg-1">
+	<h4 style="text-align: center;">PostIt Sign-In</h4>
+	<div class="container col-lg-12">
+		<label><b>Username</b></label>
+		<input type="text" placeholder="Enter Username" name="uname" required>
+		
+		<label><b>Password</b></label>
+		<input type="password" class="masked" placeholder="Enter Password" name="psw" maxlength="32" required>
+		   
+		<input type="checkbox" checked="checked"> Remember me
+		<span class="psw"><a href="#">Forgot password?</a></span>  
+	                    	
+		<!-- <button type="button" class="cancelbtn button-hover">Google Sign In</button> -->
+		<div id="googleBtn" class="g-signin2" data-onsuccess="onSignIn">
+		<button class="googlebtn button-hover">Google Sign-In</button>
+		</div>
+		<button type="submit" class="loginbtn button-hover" routerLink="/home"><i class="glyphicon glyphicon-log-out"></i> Login</button>
+	</div>
+</div>

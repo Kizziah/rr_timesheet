@@ -1,0 +1,134 @@
+/* BCMC BLUE #0D91DD */
+	label { float: left; width: 10em; margin-right: 1em; text-align: right; margin-top:6px; }
+	
+	.checkboxes {
+		display: inline-block;
+		vertical-align: top;
+	}
+	   
+	   
+	 .form-panel {
+	 	min-width: 700px;
+	 	background-color: #f1f1f1;
+	 	/* box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19); */
+	 	border-radius: 5px;
+	 	padding: 20px;
+	 	border: none;
+	 	width: 45%;
+	 	margin-left: 20px;
+	 	margin-bottom: 20px;
+	 	/* background:rgba(255,255,255,0.8); */
+	 }
+
+	 
+	 .form-panel2 {
+	 	padding: 10px;
+	 	width: 45%;
+	 	margin-left: 20px;
+	 }
+	 
+	 
+	 textarea {
+    	resize: none;
+	 }
+
+	 select {
+        padding: 6px 10px;
+        margin-bottom: 16px;
+        display: inline;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 3px;
+	 }
+	 
+	 input {
+	 	padding: 6px 10px;
+        margin-bottom: 16px;
+        display: inline;
+        border: 1px solid #ccc;
+        box-sizing: border-box;
+        border-radius: 3px;
+	 }
+	 
+     input[type=text], input[type=password] {
+        width: 70%;
+    }
+    input[type=radio] {
+    	margin-top: 10px;
+        margin-right: 5px;   
+        width: auto;
+    }
+    
+    input[type=checkbox]  {
+        width: auto;
+        margin-right: 5px;   
+        vertical-align: top;
+    }
+	
+    input[type=date]  {
+        width: 18%;
+    }
+    
+   
+
+    .button-panel1 {
+    	width: auto;
+    	float: right;
+    	display: inline;
+    	margin-right: 6em;
+    }
+    
+    .notes {
+     width: 70%; 
+     box-sizing: border-box;
+     height: 145px;
+     border-radius: 5px;
+     border: 1px solid #ccc;
+    }
+    
+    button {
+    	margin-left: 25px;
+    	margin-bottom: 10px;
+        background-color: #107069;
+        color: white;
+		border: none;
+        cursor: pointer;
+        border-radius: 0px;
+        padding: 10px 16px;
+        font-weight: bold;
+		transition: all .5s ease 0s;
+
+    }
+    
+    button:hover {
+		box-shadow: inset 100px 0 0 #969A97; 
+		/* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19); */
+    }
+    
+    .removebtn {
+    	margin: 0;
+    	padding: 0px 8px;
+        background-color: #D35B5B;
+    }
+    
+    table {
+    width: 100%;
+    background-color: white;
+    border: 1px solid #ccc;
+
+	}
+
+    table, td, th {
+    	padding: 5px;
+    }
+    
+    /* STRIPED TABLE
+    tr:nth-child(even){
+    background-color: #f2f2f2
+    }
+    */
+    
+    th {
+    background-color: #107069;
+    color: white;
+}

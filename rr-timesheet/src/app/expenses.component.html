@@ -1,0 +1,70 @@
+In Progress...
+<br> <br>
+Expense Table
+
+
+<div class="container col-lg-12">
+	<h2>Expenses</h2>
+	<div class="row col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Description: </label>
+			<input type="text" name="description" required>
+		</div>
+		<div class="row form-inline">
+			<label>Currency Type: </label>
+			<select name="currencytype" required>
+				<option value="hold2">mm/dd/yy</option>							
+			</select>
+		</div>	
+		<div class="row form-inline">
+			<label>Date: </label>
+			<input type="date" name="date" required>
+			<i class="glyphicon glyphicon-calendar"></i>
+		</div>		
+		<div class="row form-inline">
+			<label>Reimbursement Total: </label>
+			<input type="text" name="reimbursement" required>
+		</div>
+		<div class="row">
+			<table class="table table-hover table-striped" id="expenses" cellspacing="0">
+		        <thead>
+		            <tr>
+		                <th>Description</th>
+		                <th>Note</th>
+		                <th>Total</th>
+		            </tr>
+		        </thead>
+		       
+		       <!-- <tfoot>
+		            <tr>
+		                <th>Holiday</th>
+		                <th>Date</th>
+		                <th>Remove</th>
+		            </tr>
+		        </tfoot> -->
+	
+		        <tbody>
+		            <tr>
+		                <td>PostIt</td>
+		                <td><input type="text"></td>
+		                <td><input type="text"></td>
+		            </tr>
+		            <tr>
+		                <td>Not MAT</td>
+		                <td><input type="text"></td>
+		                <td><input type="text"></td>
+		            </tr>
+		            <tr>
+		                <td>Not PDIP</td>
+		                <td><input type="text"></td>
+		                <td><input type="text"></td>
+		            </tr>		            		            
+	         	</tbody>
+      		</table>
+		</div>
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+	</div>
+</div>

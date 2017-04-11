@@ -1,0 +1,81 @@
+<div class="container col-lg-12">
+	<h2>Paid Time Off</h2>
+	<div class="row col-lg-6 form-panel">
+		<button type="button"><i class="glyphicon glyphicon-plus"></i> New PTO</button>
+		<table class="table table-hover table-striped" id="pto" cellspacing="0">
+	        <thead>
+	            <tr>
+	                <th>Check All</th>		            	
+	                <th>Name</th>
+	                <th>Type</th>
+	                <th>Status</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	            <tr>
+	            	<td><input type="checkbox"></td>
+	                <td>PTO 1</td>
+	                <td>Holiday</td>
+	                <td>Enabled</td>
+	            </tr>
+	            <tr>
+	            	<td><input type="checkbox"></td>
+	                <td>PTO 2</td>
+	                <td>Paid</td>
+	                <td>Enabled</td>		                		                
+	            </tr>
+	            <tr>
+	            	<td><input type="checkbox"></td>
+	                <td>PTO 3</td>
+	                <td>Parental Leave</td>
+	                <td>Enabled</td>
+	            </tr>		            		            
+         	</tbody>
+     	</table>
+		<div class="row form-inline button-panel1">
+			<button type="button"><i class="glyphicon glyphicon-ok"></i> Enable</button>
+			<button type="button"><i class="glyphicon glyphicon-ban-circle"></i> Disable</button>
+			<button type="button"><i class="glyphicon glyphicon-trash"></i> Remove</button>
+		</div>	
+	</div>
+	
+	<div class="row col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Starting Balance: </label>
+			<input type="text" name="startbalance" style="width: 100px;" required> hrs.
+		</div>
+		<div class="row form-inline">
+			<label>Accrual Unit: </label>
+			<input type="text" name="accrualunit" style="width: 100px;" placeholder="e.g. 5" required> hrs.
+		</div>
+		<div class="row form-inline">
+			<label>Accrual Frequency: </label>
+			<select name="accrual" required>
+				<option value="weekly">Weekly</option>
+				<option value="biweekly">Biweekly</option>
+				<option value="semimonthly">Semi-monthly</option>
+				<option value="monthly">Monthly</option>								
+			</select>
+		</div>		
+		<div class="row form-inline">
+			<label>Reset Frequency: </label>
+			<select name="resetfreq" required>
+				<option value="endofyear">End Of Year</option>								
+			</select>
+		</div>	
+		<div class="row form-inline">
+			<label>Annual Max Carry-Over Limit: </label>
+			<input type="text" name="maxcarryover" style="width: 100px;" placeholder="e.g. 60" required> hrs.
+		</div>
+		<div class="row form-inline">
+			<label>Max Total Balance: </label>
+			<input type="text" name="maxtotal" style="width: 100px;" placeholder="e.g. 100" required> hrs.
+		</div>		
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+	</div>
+</div>
+
+

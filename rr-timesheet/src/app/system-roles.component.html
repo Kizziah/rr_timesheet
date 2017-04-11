@@ -1,0 +1,88 @@
+In Progress...
+<div class="container col-lg-12">
+<h2>System Roles</h2>
+	<div class="row col-lg-6 form-panel">
+		<div class="row">
+			<button type="button"><i class="glyphicon glyphicon-plus"></i> Add</button>
+			<table class="table table-hover table-striped" id="approvertype" cellspacing="0">
+		        <thead>
+		            <tr>
+		                <th>Check All</th>		            	
+		                <th>Type</th>
+		                <th>Description</th>
+		                <th>Status</th>
+		            </tr>
+		        </thead>
+		        <tbody>
+		            <tr>
+		            	<td><input type="checkbox"></td>
+		                <td>Administrator</td>
+		                <td>approver</td>
+		                <td>Enabled</td>
+		            </tr>
+		            <tr>
+		            	<td><input type="checkbox"></td>
+		                <td>General User</td>
+		                <td>user</td>
+		                <td>Enabled</td>		                		                
+		            </tr>
+		            <tr>
+		            	<td><input type="checkbox"></td>
+		                <td>External Viewer</td>
+		                <td>viewer</td>
+		                <td>Enabled</td>
+		            </tr>
+		            <tr>
+		            	<td><input type="checkbox"></td>
+		                <td>Accountant</td>
+		                <td>viewer</td>
+		                <td>Enabled</td>
+		            </tr>		            		            
+	         	</tbody>
+      		</table>
+		</div>	
+		<div class="row form-inline button-panel1">
+			<button type="button"><i class="glyphicon glyphicon-ok"></i> Enable</button>
+			<button type="button"><i class="glyphicon glyphicon-ban-circle"></i> Disable</button>
+			<button type="button"><i class="glyphicon glyphicon-trash"></i> Remove</button>
+		</div>	
+	</div>
+
+	<div class="row col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Name: </label>
+			<input type="text" name="name" required>
+		</div>
+		<div class="row form-inline">
+			<label>Description: </label>
+			<input type="text" name="name">
+		</div>
+		<div class="row form-inline">
+			<label>Status</label>
+			<input type="radio" name="status" value="enabled" checked> Enabled
+			<input type="radio" name="status" value="disabled"> Disabled
+		</div>
+		<div class="row form-inline">
+			<label>Role: </label>			
+			<select name="role" required>
+				<option value="supervisor">Supervisor</option>
+				<option value="genuser">General User</option>
+				<option value="administrator">Administrator</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Permissions: </label>
+			<div class="checkboxes">
+				<input type="checkbox" name="check1" value=""><br>
+				<input type="checkbox" name="check2" value=""><br>
+				<input type="checkbox" name="check3" value=""><br>
+				<input type="checkbox" name="check4" value=""><br>
+				<input type="checkbox" name="check5" value=""><br>
+			</div>
+		</div>
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>	
+	</div>
+</div>

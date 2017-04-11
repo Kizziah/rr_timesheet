@@ -1,0 +1,82 @@
+<div class="container col-lg-12">
+<h2>Labor Rates</h2>
+	<div class="row col-lg-6 form-panel">
+		<div class="form-inline">
+			<label>Contract: </label>
+			<select name="contract" required>
+				<option value="contractnum">Contract Number - Short Name</option>
+			</select>
+		</div>	
+		<div class="form-inline">
+			<label>Labor Category: </label>
+			<input type="text" name="laborcategory" required>
+		</div>
+		<div class="form-inline">
+			<label>Code: </label>
+			<input type="text" name="code" required>
+		</div>
+		<div class="form-inline">
+			<label>Hourly Rate: </label>
+			<input type="text" name="hourlyrate" style="width: 20%;" required>			
+			<select name="currency" required>
+				<option value="usd">$USD</option>
+				<option value="euro">Euro</option>
+				<option value="yen">Yen</option>
+				<option value="pounds">Pounds</option>
+			</select>
+		</div>
+		<div class="form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+		<div class="form-inline">
+			<table class="table table-hover table-striped" id="laborrates" cellspacing="0">
+		        <thead>
+		            <tr>
+		            	<th>Code</th>
+		                <th>Labor Categories (title)</th>
+		                <th>Rate</th>
+		                <th>Remove</th>
+		            </tr>
+		        </thead>
+		       
+		       <!-- <tfoot>
+		            <tr>
+		                <th>Holiday</th>
+		                <th>Date</th>
+		                <th>Remove</th>
+		            </tr>
+		        </tfoot> -->
+
+		        <tbody>
+		            <tr>
+		            	<td>1001</td>
+		                <td>Senior Systems Engineer</td>
+		                <td>$123.00</td>
+		                <td><button class="removebtn">-</button></td>
+		            </tr>
+		            <tr>
+		            	<td>2001</td>
+		                <td>Senior Systems Analyst</td>
+		                <td>$123.00</td>
+		                <td><button class="removebtn">-</button></td>
+		            </tr>
+		            <tr>
+		            	<td>3001</td>
+		                <td>Senior Systems Architect</td>
+		                <td>$123.00</td>
+		                <td><button class="removebtn">-</button></td>
+		            </tr>
+		            <tr>
+		            	<td>4001</td>
+		                <td>Senior Systems Admin</td>
+		                <td>$123.00</td>
+		                <td><button class="removebtn">-</button></td>
+		            </tr>		            		            
+	         	</tbody>
+       		</table>
+		</div>
+	</div>
+</div>
+
+

@@ -1,8 +1,39 @@
-<h1>
-  {{title}}
-</h1>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/home">PostIt</a>
+    </div>
+    <ul class="nav navbar-nav">
 
+		<li><a routerLink="/timesheets">Timesheets</a></li>
+		<li><a routerLink="/time-off">Time Off</a></li>
+		<li><a routerLink="/expenses">Expenses</a></li>
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+    <li class="dropdown">
+			<a class="dropdown-toggle" data-toggle="dropdown">Admin</a>
+			<ul class="dropdown-menu">
+				<li><a routerLink="/user">Users</a></li>
+				<li><a routerLink="/profile">Profiles</a></li>
+				<li><a routerLink="/contract">Contracts</a></li>
+				<li><a routerLink="/calendars">Calendars</a></li>
+				<li><a routerLink="/labor-rates">Labor Rates</a></li>
+				<li><a routerLink="/pto">Paid Time Off (PTO)</a></li>
+				<li><a routerLink="/user-preferences">User Preferences</a></li>
+				<li><a routerLink="/system-roles">System Roles</a></li>				
+			</ul>
+		</li>
+		<li class="dropdown">
+			<a class="dropdown-toggle glyphicon glyphicon-user" data-toggle="dropdown"></a>
+			<ul class="dropdown-menu">
+				<li><a routerLink="/account"><i class="glyphicon glyphicon-cog"></i> Account Settings</a></li>
+				<li><a routerLink="/account">Profile Settings</a></li>
+				<li><a routerLink="/account">Other Settings</a></li>
+				<li><a routerLink="/login"><i class="glyphicon glyphicon-log-out"></i> Log out</a></li>
+			</ul>
+		</li>
+    </ul>
+  </div>
+</nav>
 
-<ul>
-  <li *ngFor="let book of books">{{ book.name }}</li>
-</ul>
+<router-outlet></router-outlet>

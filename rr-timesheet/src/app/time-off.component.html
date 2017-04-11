@@ -1,0 +1,39 @@
+In Progress...
+<div class="container col-lg-12">
+<h2>Time Off</h2>
+	<div class="row col-lg-6 form-panel">
+		<div class="row form-inline">
+			<label>Time  Off Type: </label>
+			<select name="timeofftype" required>
+				<option value="pto">Paid Time Off (PTO)</option>
+				<option value="unpaid">Unpaid Leave</option>				
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Time Requested: </label>
+			<select name="timerequested" required>
+				<option value="halfday">Half-day</option>
+				<option value="fullday">Full-day</option>
+			</select>
+		</div>
+		<div class="row form-inline">
+			<label>Start Date: </label>
+			<input type="date" name="startdate" required>
+			<i class="glyphicon glyphicon-calendar"></i>
+			<label style="float: none;">End Date: </label>
+			<input type="date" name="enddate" required>
+			<i class="glyphicon glyphicon-calendar"></i>
+		</div>		
+		<div class="row form-inline">
+			<label>Comments: </label>
+			<textarea class="notes" type="text" name="notes"></textarea>
+		</div>
+		<br>
+		<div class="row form-inline button-panel1">
+			<button type="submit" class="savebtn"><i class="glyphicon glyphicon-floppy-disk"></i> Save</button>
+			<button type="button" class="cancelbtn"><i class="glyphicon glyphicon-remove"></i> Cancel</button>
+		</div>
+	</div>
+</div>
+
+
