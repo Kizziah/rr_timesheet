@@ -39,6 +39,9 @@ gem 'font-awesome-sass'
 
 gem 'paperclip', '~> 5.1'
 
+
+gem 'rack-cors', :require => 'rack/cors'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '~> 3.0'
 
